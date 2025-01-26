@@ -1,5 +1,4 @@
 import nodemailer from 'nodemailer'
-import fs from 'fs'
 import path from 'path'
 const ExcelJS = require('exceljs')
 
