@@ -21,6 +21,7 @@ Before starting, make sure you have the following installed on your system:
 - **npm** or **yarn**
 
 ---
+
 ## Usage
 
 ### Step 1 - Installation
@@ -81,6 +82,7 @@ import { add } from 'email-sender'
 ```
 
 Construct & send
+
 ```js
 const emailSender = new EmailSender(emailConfig)
 
@@ -98,5 +100,9 @@ emailSender
   })
 ```
 
+> [!Note] Remember !
+> This package is primarily for backend usage only. Because it is node.js based and that doesn't run on browser.
+> If you want to use this on frontend (browser), you need to run your frontend on server (server-side rendering) using express.
+
 > [!Note]
->  Managing attachments - Coming soon...
+> Managing attachments - Coming soon...

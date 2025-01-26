@@ -112,25 +112,3 @@ export class EmailSender {
     })
   }
 }
-
-const emailConfig = {
-  name: 'Yadab',
-  service: 'yahoo',
-  user: 'yadab.sutradhar@yahoo.com',
-  pass: 'dpbuybruyhuaigxu',
-}
-
-const emailSender = new EmailSender(emailConfig)
-
-const contacts = [{ email: 'yadab.sd2013@gmail.com', name: 'Yadab' }]
-const message = 'Hello ${name}, <p><b>this</b> is a test email!</p>'
-const subject = 'Test Email'
-
-emailSender
-  .sendEmails(contacts, message, subject)
-  .then((message) => {
-    console.log(message)
-  })
-  .catch((error) => {
-    console.error(error)
-  })
