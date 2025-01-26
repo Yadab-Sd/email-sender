@@ -39,7 +39,7 @@ yarn add job-email-sender
 Add this code to your program file-
 
 ```
-export const emailConfig = {
+const emailConfig = {
   service: 'gmail',
   user: 'your-email@example.com', // your email address (sender/from)
   pass: 'your-email-password', // your app password for your email account
@@ -76,7 +76,7 @@ const { EmailSender } = require('job-email-sender')
 For TypeScript Users:
 
 ```typescript
-const { EmailSender } = require('job-email-sender')
+import { EmailSender } from 'job-email-sender'
 ```
 
 Construct & send
