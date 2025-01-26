@@ -2,7 +2,7 @@
   "name": "job-email-sender",
   "version": "1.0.1",
   "description": "Send email using your account (i.e gmail, yahoo etc.) to any receivers (i.e. recruiters, friends etc.) with batch",
-  "main": "dist/index.ts",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
