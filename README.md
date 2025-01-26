@@ -1,13 +1,10 @@
-
-
-
 # 📧 Email Sender Service
 
-A simple Node.js application that sends emails using the `nodemailer` package. This service ensures smooth email delivery with customizable options for creating folders and managing attachments.
+A simple Node.js application that sends emails using the `nodemailer` package. This service ensures smooth email delivery with minimal setup.
 
 ---
 
-## 🚀 Features
+### 🚀 Features
 
 - Lightweight and customizable codebase.
 - Designed to be beginner-friendly.
@@ -16,7 +13,7 @@ A simple Node.js application that sends emails using the `nodemailer` package. T
 
 ---
 
-## 🛠️ Prerequisites
+### 🛠️ Prerequisites
 
 Before starting, make sure you have the following installed on your system:
 
@@ -24,21 +21,22 @@ Before starting, make sure you have the following installed on your system:
 - **npm** or **yarn**
 
 ---
-
-## 📦 Installation
-
-1. Clone the repository:
-   ```bash
-   npm install email-sender
-   ```
-   ```bash
-   yarn add email-sender
-   ```
-   
 ## Usage
 
-### Step 1 - Configure
+### Step 1 - Installation
+
+```bash
+npm install email-sender
+```
+
+```bash
+yarn add email-sender
+```
+
+### Step 2 - Configuration
+
 Add this code to your program file-
+
 ```
 export const emailConfig = {
   service: 'gmail',
@@ -49,38 +47,40 @@ export const emailConfig = {
   name: 'your-display-name'
 };
 ```
+
 ---
 
 ### Notes:
+
 1. Replace placeholders like `your-email@example.com`, `your-display-name`, with your actual details.
 2. Use `gmail`, `yahoo` etc. in `service` placeholder. Whereever is your actual email account in.
 3. For `pass`, this is not your email login password. It is a app password which can be collected from your email account. For details follow-
 
 #### Enable App Passwords:
-#### Yahoo
-Log in to your [Yahoo Account](https://login.yahoo.com/).\
-Click top-right avatar -> Login (if not logged in already)
-Click on Security on nav bar > App Passwords.\
-Generate a new app password for "Mail".\
-Copy the password and use it as your `pass` value.\
 
-#### Gmail
-Follow [Google App Password](https://knowledge.workspace.google.com/kb/how-to-create-app-passwords-000009237) to get app password.\
+> Yahoo : Follow [instructions](https://help.yahoo.com/kb/SLN15241.html) to get app password for yahoo mail.
 
-#### Other Services
-Follow their own instructions to get app password.
+> Gmail : Follow [Google App Password](https://knowledge.workspace.google.com/kb/how-to-create-app-passwords-000009237) to get app password.
 
+> Other Services : Follow their own instructions to get app password.
+
+---
+
+### Step 3 - Apply
 
 For JavaScript Users:
+
 ```javascript
-const { add } = require('email-sender');
+const { add } = require('email-sender')
 ```
 
 For TypeScript Users:
+
 ```typescript
-import { add } from 'email-sender';
+import { add } from 'email-sender'
 ```
 
+Construct & send
 ```js
 const emailSender = new EmailSender(emailConfig)
 
@@ -97,3 +97,6 @@ emailSender
     console.error(error)
   })
 ```
+
+> [!Note]
+>  Managing attachments - Coming soon...
