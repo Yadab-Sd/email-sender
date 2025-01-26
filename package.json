@@ -10,7 +10,8 @@
   "scripts": {
     "start": "ts-node src/index.ts",
     "test": "jest",
-    "build": "tsc"
+    "build": "tsc",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
