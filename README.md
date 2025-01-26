@@ -38,7 +38,7 @@ yarn add job-email-sender
 
 Add this code to your program file-
 
-```
+```js
 const emailConfig = {
   service: 'your-email-service', // Example- `gmail`, `yahoo` etc.
   user: 'your-email@example.com', // your email address (sender/from)
