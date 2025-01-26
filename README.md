@@ -27,11 +27,11 @@ Before starting, make sure you have the following installed on your system:
 ### Step 1 - Installation
 
 ```bash
-npm install email-sender
+npm install job-email-sender
 ```
 
 ```bash
-yarn add email-sender
+yarn add job-email-sender
 ```
 
 ### Step 2 - Configuration
@@ -70,13 +70,13 @@ export const emailConfig = {
 For JavaScript Users:
 
 ```javascript
-const { EmailSender } = require('email-sender')
+const { EmailSender } = require('job-email-sender')
 ```
 
 For TypeScript Users:
 
 ```typescript
-const { EmailSender } = require('email-sender')
+const { EmailSender } = require('job-email-sender')
 ```
 
 Construct & send
