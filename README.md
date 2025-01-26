@@ -40,7 +40,7 @@ Add this code to your program file-
 
 ```
 const emailConfig = {
-  service: 'gmail',
+  service: 'your-email-service', // Example- `gmail`, `yahoo` etc.
   user: 'your-email@example.com', // your email address (sender/from)
   pass: 'your-email-password', // your app password for your email account
   name: 'your-display-name'
