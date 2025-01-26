@@ -41,10 +41,8 @@ Add this code to your program file-
 ```
 export const emailConfig = {
   service: 'gmail',
-  auth: {
-    user: 'your-email@example.com', // your email address (sender/from)
-    pass: 'your-email-password', // your app password for your email account
-  },
+  user: 'your-email@example.com', // your email address (sender/from)
+  pass: 'your-email-password', // your app password for your email account
   name: 'your-display-name'
 };
 ```
@@ -72,13 +70,13 @@ export const emailConfig = {
 For JavaScript Users:
 
 ```javascript
-const { add } = require('email-sender')
+const { EmailSender } = require('email-sender')
 ```
 
 For TypeScript Users:
 
 ```typescript
-import { add } from 'email-sender'
+const { EmailSender } = require('email-sender')
 ```
 
 Construct & send
